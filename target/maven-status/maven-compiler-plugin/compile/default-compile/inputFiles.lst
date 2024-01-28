@@ -1,0 +1,7 @@
+/Users/eleiatech/Documents/Repository/Projects/Mock/product-service/src/main/java/com/eleiatech/stockmanagement/productservice/enums/Language.java
+/Users/eleiatech/Documents/Repository/Projects/Mock/product-service/src/main/java/com/eleiatech/stockmanagement/productservice/ProductServiceApplication.java
+/Users/eleiatech/Documents/Repository/Projects/Mock/product-service/src/main/java/com/eleiatech/stockmanagement/productservice/configuration/SwaggerConfiguration.java
+/Users/eleiatech/Documents/Repository/Projects/Mock/product-service/src/main/java/com/eleiatech/stockmanagement/productservice/repository/entity/Product.java
+/Users/eleiatech/Documents/Repository/Projects/Mock/product-service/src/main/java/com/eleiatech/stockmanagement/productservice/exception/enums/FriendlyMessageCodes.java
+/Users/eleiatech/Documents/Repository/Projects/Mock/product-service/src/main/java/com/eleiatech/stockmanagement/productservice/exception/enums/IFriendlyMessageCode.java
+/Users/eleiatech/Documents/Repository/Projects/Mock/product-service/src/main/java/com/eleiatech/stockmanagement/productservice/exception/utils/FriendlyMessageUtils.java
