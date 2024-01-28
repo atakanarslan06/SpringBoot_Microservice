@@ -1,0 +1,71 @@
+[33mcommit b87cf14dfd77286d18d2b38ca22179d063d62cab[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 15:53:52 2024 +0300
+
+    Create Product Method
+
+[33mcommit d72966626332c4c6b2325dcecedee20f344458b3[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 15:32:48 2024 +0300
+
+    Creating the Exception Structure
+
+[33mcommit 3058f931355cd3c4204eb540be50f4b340efa285[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 15:25:55 2024 +0300
+
+    Creating the Exception Structure
+
+[33mcommit 6b1381d065a25833c98744eb94c72eaebe6a6af7[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 14:41:45 2024 +0300
+
+    Response Messages
+
+[33mcommit 9e471957b446c84c111fd9752654a19dcd7c8217[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 14:35:30 2024 +0300
+
+    Product Service
+
+[33mcommit 241b1ad60a0eb1e1de6d7716dfa1f9b2e8dd3781[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 14:32:26 2024 +0300
+
+    Product Requests
+
+[33mcommit 5130cd448a064b171d4dc492ba3ae572c32a77ea[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 14:29:33 2024 +0300
+
+    Product Repository
+
+[33mcommit 94310225c089547f1fba1f7dbe1e44f72ba62239[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 14:21:44 2024 +0300
+
+    Product Entity
+
+[33mcommit fb08efedc4577830e7f9b7b02e3899814c74173a[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 14:11:34 2024 +0300
+
+    Application Properties
+
+[33mcommit c41fc8d6e0d9f393bf867318b32135711cd80607[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 13:18:17 2024 +0300
+
+    Added Language
+
+[33mcommit 224bf5b2def6ffcfdbd1c70d0cc00822553bd5c3[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 13:09:33 2024 +0300
+
+    Build Project
+
+[33mcommit c985b4aef51032828de1289b45a8fcc7f2c2c68a[m
+Author: Atakan Arslan <atak.arslan@hotmail.com>
+Date:   Sun Jan 28 13:07:32 2024 +0300
+
+    first commit

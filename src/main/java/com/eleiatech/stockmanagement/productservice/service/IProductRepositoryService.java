@@ -1,4 +1,4 @@
-package com.eleiatech.stockmanagement.productservice.service.impl;
+package com.eleiatech.stockmanagement.productservice.service;
 
 
 import com.eleiatech.stockmanagement.productservice.enums.Language;
