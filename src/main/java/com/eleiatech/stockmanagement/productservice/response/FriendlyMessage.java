@@ -1,2 +1,14 @@
-package com.eleiatech.stockmanagement.productservice.response;public class FriendlyMessage {
+package com.eleiatech.stockmanagement.productservice.response;
+
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+
+public class FriendlyMessage {
+    private  String title;
+    private  String descriptipon;
+    private  String buttonPositive;
+
 }
