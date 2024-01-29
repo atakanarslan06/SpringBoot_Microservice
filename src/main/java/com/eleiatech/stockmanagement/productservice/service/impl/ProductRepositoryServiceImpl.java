@@ -17,7 +17,7 @@ import java.util.List;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class ProductRepositoryImpl implements IProductRepositoryService {
+public class ProductRepositoryServiceImpl implements IProductRepositoryService {
     private final IProductRepository productRepository;
 
     @Override
