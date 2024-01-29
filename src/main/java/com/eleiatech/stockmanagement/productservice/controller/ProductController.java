@@ -5,6 +5,7 @@ import com.eleiatech.stockmanagement.productservice.exception.enums.FriendlyMess
 import com.eleiatech.stockmanagement.productservice.exception.utils.FriendlyMessageUtils;
 import com.eleiatech.stockmanagement.productservice.repository.entity.Product;
 import com.eleiatech.stockmanagement.productservice.request.ProductCreateRequest;
+import com.eleiatech.stockmanagement.productservice.request.ProductUpdatedRequest;
 import com.eleiatech.stockmanagement.productservice.response.FriendlyMessage;
 import com.eleiatech.stockmanagement.productservice.response.InternalApiResponse;
 import com.eleiatech.stockmanagement.productservice.response.ProductResponse;
@@ -52,6 +53,25 @@ import org.springframework.web.bind.annotation.*;
                 .payload(productResponse)
                 .build();
 
+    }
+    @ResponseStatus(HttpStatus.OK)
+    @PutMapping(value = "/{language}/update/{productId}")
+    public InternalApiResponse<ProductResponse> updateProduct(@PathVariable("language") Language language,
+                                                              @PathVariable("productId") Long productId,
+                                                              @RequestBody ProductUpdatedRequest productUpdatedRequest){
+        log.debug("[{}][updateProduct] -> request: {} {}", this.getClass().getSimpleName(), productId, productUpdatedRequest);
+        Product product = productRepositoryService.updateProduct(language, productId, productUpdatedRequest);
+        ProductResponse productResponse = convertProductResponse(product);
+        log.debug("[{}][updateProduct] -> response: {}", this.getClass().getSimpleName(), productResponse);
+        return InternalApiResponse.<ProductResponse>builder()
+                .friendlyMessage(FriendlyMessage.builder()
+                        .title(FriendlyMessageUtils.getFriendlyMessage(language, FriendlyMessageCodes.SUCCESS))
+                        .descriptipon(FriendlyMessageUtils.getFriendlyMessage(language, FriendlyMessageCodes.PRODUCT_SUCCESSFULLY_UPDATED))
+                        .build())
+                .httpStatus(HttpStatus.OK)
+                .hasError(false)
+                .payload(productResponse)
+                .build();
     }
 
     private static ProductResponse convertProductResponse(Product product) {
