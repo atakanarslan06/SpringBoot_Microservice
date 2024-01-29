@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85eeb20f-e017-498f-bbfd-816bba67cb7e" name="Changes" comment="Added Language">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/exception/exceptions/ProductNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/repository/entity/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/repository/entity/IProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/service/impl/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/service/impl/ProductRepositoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/exception/enums/FriendlyMessageCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/exception/enums/FriendlyMessageCodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/exception/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/exception/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/service/impl/ProductRepositoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eleiatech/stockmanagement/productservice/service/impl/ProductRepositoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FriendlyMessage_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FriendlyMessage_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FriendlyMessage_tr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FriendlyMessage_tr.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +200,7 @@
       <workItem from="1674597645030" duration="4220000" />
       <workItem from="1674664675082" duration="1115000" />
       <workItem from="1706436236518" duration="8863000" />
-      <workItem from="1706508672550" duration="3668000" />
+      <workItem from="1706508672550" duration="4823000" />
     </task>
     <task id="LOCAL-00001" summary="Added Language">
       <option name="closed" value="true" />
