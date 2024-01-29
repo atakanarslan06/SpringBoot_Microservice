@@ -10,10 +10,14 @@ import com.eleiatech.stockmanagement.productservice.response.FriendlyMessage;
 import com.eleiatech.stockmanagement.productservice.response.InternalApiResponse;
 import com.eleiatech.stockmanagement.productservice.response.ProductResponse;
 import com.eleiatech.stockmanagement.productservice.service.IProductRepositoryService;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Slf4j
 @RestController
@@ -72,6 +76,32 @@ import org.springframework.web.bind.annotation.*;
                 .hasError(false)
                 .payload(productResponse)
                 .build();
+    }
+    @ApiOperation(value = "This endpoint get all product")
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping(value = "/{language}/products")
+    public InternalApiResponse<List<ProductResponse>> getProducts(@PathVariable("language") Language language){
+        log.debug("[{}][getProducts]", this.getClass().getSimpleName());
+        List<Product> products = productRepositoryService.getProducts(language);
+        List<ProductResponse> productResponses = convertProductResponseList(products);
+        log.debug("[{}][getProducts] -> response: {}", this.getClass().getSimpleName(), productResponses);
+        return InternalApiResponse.<List<ProductResponse>>builder()
+                .httpStatus(HttpStatus.OK)
+                .hasError(false)
+                .payload(productResponses)
+                .build();
+    }
+
+    private  List<ProductResponse> convertProductResponseList(List<Product> productList){
+        return productList.stream()
+                .map(arg -> ProductResponse.builder()
+                        .productId(arg.getProductId())
+                        .productName(arg.getProductName())
+                        .quantity(arg.getQuantity())
+                        .productCreatedDate(arg.getProductCreatedDate().getTime())
+                        .productUpdatedDate(arg.getProductUpdatedDate().getTime())
+                        .build())
+                .collect(Collectors.toList());
     }
 
     private static ProductResponse convertProductResponse(Product product) {
