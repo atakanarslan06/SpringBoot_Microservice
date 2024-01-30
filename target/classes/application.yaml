@@ -30,7 +30,26 @@ spring:
       hibernate:
         default_schema: stock_management
   datasource:
-    url: "jdbc:postgresql://localhost:5432/stock_management"
+    url: "jdbc:postgresql://postgres:5432/stock_management"
+    username: postgres
+    password: 123
+
+---
+
+spring:
+  profiles: stage
+  cloud:
+    config:
+      uri: http://localhost:8888
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        default_schema: stock_management
+  datasource:
+    url: "jdbc:postgresql://postgres:5432/stock_management"
     username: postgres
     password: 123
 
